@@ -1,7 +1,9 @@
 # Template React Native Shell Script
 Complete creation of the development template react native environment.
 
-Prerequisite:
+Pre-requisite:
+ - NodeJS
+
 ## How to use?
 
 Please, run this command below:
