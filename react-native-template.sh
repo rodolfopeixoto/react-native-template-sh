@@ -8,8 +8,17 @@ echo "==========================================================================
 echo 'Olá, tudo bem?'
 echo 'Dê um nome ao seu aplicativo'
 read myapp
+echo `====================================================================================`
+echo `Você deseja utilizar o create react native app com expo digite o caracter [ y ] sim ou [ n ] não:`
+read answer
 
-react-native init $myapp
+if [ "$answer" = 'y' ]
+then
+  create-react-native-app $myapp
+else
+  react-native init $myapp
+fi
+
 cd $myapp
 mkdir app
 cd app
