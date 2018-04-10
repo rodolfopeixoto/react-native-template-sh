@@ -38,3 +38,31 @@ Com o comando abaixo você abre o Android Studio
 ```
 run-emulador [ nome do emulador ]
 ```
+
+Um dos grandes problemas ao utilizar o react-native é fazer a ligação entre o SDK e o react-native(inicializador).
+Algumas dicas:
+ - Instale o sdk man [SDKMAN](http://sdkman.io/install.html)
+   - após instalar você pode instalar o java com o comando:
+    ```
+      sdk install java
+    ```
+ - Se você instalou o Android Studio seguindo os passos do (ANDROID STUDIO)[https://developer.android.com/studio/index.html]
+  - Você precisa agora adicionar a variável de ambiente  ANDROID_HOME, vá até o ~/.profile
+  ```
+    sudo gedit ~/.profile
+  ```
+  Adicione o código abaixo:
+   ```
+     export ANDROID_HOME=~/Android/Sdk
+     export PATH=$PATH:$ANDROID_HOME/tools
+     export PATH=$PATH:$ANDROID_HOME/platform-tools/
+   ```
+
+Você poderá escolher entre utilizar o react-native puro ou o create-react-native-app que é um template com diversas libs prontas, a desvantagem do create-react-native-app é que ele lhe limitará caso queira criar módulos em linguagens nativas.
+
+Para utilizar o create-react-native-app você precisa ter o mesmo instalado:
+
+```
+npm install -g create-react-native-app
+```
+
