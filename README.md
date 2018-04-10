@@ -15,13 +15,13 @@ Please, run this command below:
 Para abrir o emulador android sem precisar abrir o Android Studio, basta adicionar o comando abaixo no arquivo ~/.bashrc
 
 ```
-  sudo gedit ~/.bashrc
+  sudo gedit ~/.profile
 ```
 
 ```sh
 #Android
 
-EMULATOR_PATH=~/.Android/Sdk/emulator/emulator
+EMULATOR_PATH=~/Android/Sdk/emulator/emulator
 alias ls-emulator="$EMULATOR_PATH -list-avds"
 alias run-emulator="$EMULATOR_PATH -avd"
 ```
